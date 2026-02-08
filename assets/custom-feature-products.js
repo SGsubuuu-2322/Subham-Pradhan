@@ -240,15 +240,25 @@
         const trigger = document.createElement('button');
         trigger.type = 'button';
         trigger.className = 'fp-modal__size-trigger';
-        trigger.textContent = 'Choose your ' + option.name.toLowerCase();
         trigger.dataset.optionName = option.name;
         trigger.dataset.hasSelection = 'false';
 
-        // Arrow
+        // Trigger text
+        const triggerText = document.createElement('span');
+        triggerText.className = 'fp-modal__size-trigger-text';
+        triggerText.textContent = 'Choose your ' + option.name.toLowerCase();
+        trigger.appendChild(triggerText);
+
+        // Arrow wrapper with partition line
+        const arrowWrapper = document.createElement('span');
+        arrowWrapper.className = 'fp-modal__size-arrow-wrapper';
+        
+        // Chevron SVG icon
         const arrow = document.createElement('span');
         arrow.className = 'fp-modal__size-arrow';
-        arrow.innerHTML = '&#9660;'; // Down arrow
-        sizeWrapper.appendChild(arrow);
+        arrow.innerHTML = '<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        arrowWrapper.appendChild(arrow);
+        trigger.appendChild(arrowWrapper);
 
         // Dropdown menu (scrollable)
         const dropdown = document.createElement('div');
@@ -312,7 +322,7 @@
    * Toggle size dropdown open/close
    */
   function toggleSizeDropdown(wrapper) {
-    const isOpen = wrapper.classList.contains('is-open');
+    const isOpen = wrapper.classList.contains('is-open');    
     
     // Close all dropdowns first
     closeAllDropdowns();
@@ -338,8 +348,13 @@
     const optionName = optionItem.dataset.optionName;
     const optionValue = optionItem.dataset.optionValue;
 
-    // Update trigger text
-    trigger.textContent = optionValue;
+    // Update trigger text (only the text span, not the whole trigger)
+    const triggerText = trigger.querySelector('.fp-modal__size-trigger-text');
+    if (triggerText) {
+      triggerText.textContent = optionValue;
+    } else {
+      trigger.textContent = optionValue;
+    }
 
     // Update selection state
     dropdown.querySelectorAll('.fp-modal__size-option').forEach(function(opt) {

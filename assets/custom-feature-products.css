@@ -347,18 +347,16 @@
 
 .fp-modal__size-trigger {
   width: 100%;
-  padding: 14px 50px 14px 20px;
+  padding: 0;
   background-color: #ffffff;
   border: none;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: -2%;
   color: #1a1a1a;
   cursor: pointer;
-  text-align: center;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   transition: background-color 0.3s ease;
 }
 
@@ -366,19 +364,37 @@
   outline: none;
 }
 
+/* Size trigger text */
+.fp-modal__size-trigger-text {
+  flex: 1;
+  padding: 14px 20px;
+  text-align: left;
+}
+
+/* Arrow wrapper with partition line */
+.fp-modal__size-arrow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+  border-left: 1px solid #1a1a1a;
+}
+
 .fp-modal__size-arrow {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #1a1a1a;
   transition: transform 0.3s ease;
 }
 
+.fp-modal__size-arrow svg {
+  width: 12px;
+  height: 8px;
+}
+
 .fp-modal__size-select-wrapper.is-open .fp-modal__size-arrow {
-  transform: translateY(-50%) rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* Size Dropdown Menu */
@@ -407,6 +423,7 @@
   /* Hide scrollbar while keeping scroll functionality */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
+  border-top: 1px solid #1a1a1a;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
