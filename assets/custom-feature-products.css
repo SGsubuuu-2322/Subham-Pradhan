@@ -181,8 +181,8 @@
 
 .fp-modal__close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 8px;
+  right: 10px;
   width: 24px;
   height: 24px;
   background: none;
