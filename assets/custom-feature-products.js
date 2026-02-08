@@ -459,7 +459,7 @@
 
     // Check if variant has Black color AND Medium size - for bundle feature
     const shouldAddBundledProduct = checkForBlackMediumVariant();
-    const softWinterJacketVariantId = '51902258381079';
+    const softWinterJacketVariantId = '47651531227375';
 
     // Add to cart request
     fetch(cartAddUrl, config)
