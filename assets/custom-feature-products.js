@@ -403,7 +403,7 @@
   }
 
   /**
-   * Add to cart functionality - Based on Dawn theme's product-form.js
+   * Add to cart functionality
    */
   function addToCart() {
     const variantId = modalVariantId.value;
