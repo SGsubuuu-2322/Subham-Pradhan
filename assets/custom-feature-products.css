@@ -448,12 +448,30 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  transition: all 0.3s ease;
   position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease;
+}
+
+.fp-modal__add-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff544;
+  z-index: -1;
+  transition: width 0.4s ease;
 }
 
 .fp-modal__add-btn:hover {
-  background-color: #333333;
+  color: #000000;
+}
+
+.fp-modal__add-btn:hover::before {
+  width: 100%;
 }
 
 .fp-modal__add-btn:disabled {
