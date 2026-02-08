@@ -585,7 +585,7 @@
   }
 
   .custom-feature-products__heading {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .custom-feature-products__icon-btn {
@@ -614,7 +614,7 @@
 
 @media screen and (max-width: 480px) {
   .custom-feature-products__heading {
-    font-size: 18px;
+    text-align: center;
   }
 
   .custom-feature-products__icon-btn {
