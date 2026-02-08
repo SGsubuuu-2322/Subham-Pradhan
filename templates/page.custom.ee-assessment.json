@@ -30,7 +30,7 @@
             "button_bg_color": "#000000",
             "button_text_color": "#ffffff",
             "heading_color": "#000000",
-            "description_color": "#333333",
+            "description_color": "#000000",
             "text_position": "bottom-left",
             "text_alignment": "left"
           }
