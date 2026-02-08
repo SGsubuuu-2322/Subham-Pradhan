@@ -28,7 +28,7 @@
 .custom-banner-container {
   position: relative;
   width: 100%;
-  min-height: 500px;
+  min-height: 780px;
   display: flex;
   align-items: center;
 }
@@ -73,8 +73,7 @@
   bottom: 0;
   z-index: 2;
   display: flex;
-  padding: 50px;
-  /* Default position: bottom-left */
+  padding: 40px;
   justify-content: flex-start;
   align-items: flex-end;
 }
@@ -129,7 +128,6 @@
   line-height: 1.2;
   margin: 0 0 20px 0;
   letter-spacing: -0.02em;
-  font-family: var(--font-heading-family, Georgia, serif);
 }
 
 /* Description */
@@ -164,13 +162,13 @@
 }
 
 .custom-banner-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #FFF544;
+  background-color: #fff544;
   z-index: -1;
   transition: width 0.4s ease;
 }
@@ -281,11 +279,11 @@
 
 .custom-banner-footer-text {
   margin: 0;
-  font-size: clamp(0.7rem, 1vw, 0.85rem);
-  font-weight: 500;
-  letter-spacing: 0.15em;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 13.42px;
   text-transform: uppercase;
-  font-family: var(--font-body-family, system-ui, sans-serif);
 }
 
 /* Responsive Styles */
@@ -293,30 +291,30 @@
   .custom-banner-container {
     min-height: 450px;
   }
-  
+
   .custom-banner-content {
     padding: 40px 30px;
   }
-  
+
   .custom-banner-text-wrapper {
     max-width: 380px;
     padding: 30px;
   }
-  
+
   .custom-banner-nav {
     width: 40px;
     height: 40px;
   }
-  
+
   .custom-banner-nav svg {
     width: 20px;
     height: 20px;
   }
-  
+
   .custom-banner-prev {
     left: 15px;
   }
-  
+
   .custom-banner-next {
     right: 15px;
   }
@@ -326,13 +324,13 @@
   .custom-banner-container {
     min-height: 450px;
   }
-  
+
   .custom-banner-image {
     position: absolute;
     width: 100%;
     height: 100%;
   }
-  
+
   .custom-banner-content {
     position: absolute;
     top: 0;
@@ -344,7 +342,7 @@
     justify-content: center !important;
     align-items: flex-end !important;
   }
-  
+
   .custom-banner-text-wrapper {
     max-width: 100%;
     width: 100%;
@@ -353,45 +351,45 @@
     text-align: center !important;
     border-radius: 4px;
   }
-  
+
   .custom-banner-heading {
     font-size: 1.5rem;
     margin-bottom: 12px;
   }
-  
+
   .custom-banner-description {
     font-size: 16px;
     margin-bottom: 20px;
     line-height: 130%;
   }
-  
+
   .custom-banner-button {
-    width: 100%;
     justify-content: center;
     padding: 12px 20px;
     font-size: 16px;
+    font-weight: 400;
   }
-  
+
   .custom-banner-nav {
     width: 32px;
     height: 32px;
     top: 50%;
     transform: translateY(-50%);
   }
-  
+
   .custom-banner-nav svg {
     width: 16px;
     height: 16px;
   }
-  
+
   .custom-banner-prev {
     left: 8px;
   }
-  
+
   .custom-banner-next {
     right: 8px;
   }
-  
+
   .custom-banner-pagination {
     position: absolute;
     bottom: auto;
@@ -403,19 +401,20 @@
     background: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
   }
-  
+
   .pagination-dot {
     width: 8px;
     height: 8px;
   }
-  
+
   .custom-banner-footer {
     padding: 12px 15px;
   }
-  
+
   .custom-banner-footer-text {
-    font-size: 0.65rem;
-    letter-spacing: 0.08em;
+    font-size: 14px;
+    line-height: 13.42px;
+    letter-spacing: 1px;
   }
 }
 
@@ -424,31 +423,31 @@
   .custom-banner-container {
     min-height: 400px;
   }
-  
+
   .custom-banner-content {
     padding: 15px;
   }
-  
+
   .custom-banner-text-wrapper {
     padding: 18px 15px;
   }
-  
+
   .custom-banner-heading {
-    font-size: 1.25rem;
+    font-size: 30px;
     margin-bottom: 10px;
   }
-  
+
   .custom-banner-description {
     font-size: 16px;
     margin-bottom: 15px;
   }
-  
+
   .custom-banner-button {
-    padding: 10px 18px;
+    padding: 10px 20px;
     font-size: 16px;
     gap: 10px;
   }
-  
+
   .custom-banner-button svg {
     width: 16px;
     height: 16px;
@@ -496,14 +495,14 @@
   .custom-banner-track {
     transition: none;
   }
-  
+
   .custom-banner-button,
   .custom-banner-nav,
   .pagination-dot,
   .button-arrow {
     transition: none;
   }
-  
+
   .custom-banner-slide.active .custom-banner-text-wrapper {
     animation: none;
   }
