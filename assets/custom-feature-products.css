@@ -254,6 +254,7 @@
 .fp-modal__description {
   font-size: 14px;
   font-weight: 300;
+  font-style: light;
   color: #000000;
   letter-spacing: -1%;
   line-height: 110%;
