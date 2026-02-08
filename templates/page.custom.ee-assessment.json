@@ -17,6 +17,37 @@
         "padding_bottom": 28
       }
     },
+    "custom_banner_with_text_HMkNUj": {
+      "type": "custom-banner-with-text",
+      "blocks": {
+        "banner_p3DVYP": {
+          "type": "banner",
+          "settings": {
+            "heading": "The Gift Guide",
+            "description": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+            "button_text": "SHOP NOW",
+            "button_link": "",
+            "button_bg_color": "#000000",
+            "button_text_color": "#ffffff",
+            "heading_color": "#000000",
+            "description_color": "#333333",
+            "text_position": "bottom-left",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "banner_p3DVYP"
+      ],
+      "name": "Custom Banner with Text",
+      "settings": {
+        "footer_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+        "footer_bg_color": "#f5f5f5",
+        "footer_text_color": "#000000",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
     "custom_feature_products_BcLT8t": {
       "type": "custom-feature-products",
       "blocks": {
@@ -80,7 +111,7 @@
       "name": "Feature Products Grid",
       "settings": {
         "heading": "Tisso vison in the wild",
-        "subheading": "Tisso Vision in the wild",
+        "subheading": "",
         "heading_alignment": "left",
         "heading_color": "#1a1a1a",
         "desktop_columns": 3,
@@ -94,37 +125,6 @@
         "background_color": "#ffffff",
         "icon_bg_color": "#ffffff",
         "icon_color": "#1a1a1a"
-      }
-    },
-    "custom_banner_with_text_HMkNUj": {
-      "type": "custom-banner-with-text",
-      "blocks": {
-        "banner_p3DVYP": {
-          "type": "banner",
-          "settings": {
-            "heading": "The Gift Guide",
-            "description": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
-            "button_text": "SHOP NOW",
-            "button_link": "",
-            "button_bg_color": "#000000",
-            "button_text_color": "#ffffff",
-            "heading_color": "#000000",
-            "description_color": "#333333",
-            "text_position": "bottom-left",
-            "text_alignment": "left"
-          }
-        }
-      },
-      "block_order": [
-        "banner_p3DVYP"
-      ],
-      "name": "Custom Banner with Text",
-      "settings": {
-        "footer_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
-        "footer_bg_color": "#f5f5f5",
-        "footer_text_color": "#000000",
-        "autoplay": true,
-        "autoplay_speed": 5
       }
     }
   },
