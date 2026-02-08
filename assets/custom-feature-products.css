@@ -295,17 +295,20 @@
 .fp-modal__color-btn {
   flex: 1;
   padding: 14px 20px;
+  padding-left: 26px;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: -1%;
   font-weight: 400;
   color: #1a1a1a;
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .fp-modal__color-btn:not(:last-child) {
@@ -319,6 +322,21 @@
 .fp-modal__color-btn.is-selected {
   background-color: #1a1a1a;
   color: #ffffff;
+}
+
+/* Color Tint Bar - Left Side */
+.fp-modal__color-tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 6px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Color Text */
+.fp-modal__color-text {
+  display: block;
 }
 
 /* Size Selector - Dropdown Style */

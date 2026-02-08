@@ -186,10 +186,40 @@
           const colorBtn = document.createElement('button');
           colorBtn.type = 'button';
           colorBtn.className = 'fp-modal__color-btn';
-          colorBtn.textContent = value;
           colorBtn.dataset.optionName = option.name;
           colorBtn.dataset.optionValue = value;
           colorBtn.dataset.optionPosition = option.position;
+
+          // Create color tint element
+          const colorTint = document.createElement('span');
+          colorTint.className = 'fp-modal__color-tint';
+          // Map color name to actual color value
+          const colorMap = {
+            'white': '#ffffff',
+            'black': '#000000',
+            'red': '#e53935',
+            'blue': '#1e88e5',
+            'green': '#43a047',
+            'yellow': '#fdd835',
+            'orange': '#fb8c00',
+            'pink': '#ec407a',
+            'purple': '#8e24aa',
+            'grey': '#757575',
+            'gray': '#757575',
+            'brown': '#6d4c41',
+            'navy': '#1a237e',
+            'beige': '#d7ccc8',
+            'cream': '#fffdd0'
+          };
+          const colorValue = value.toLowerCase();
+          colorTint.style.backgroundColor = colorMap[colorValue] || colorValue;
+          colorBtn.appendChild(colorTint);
+
+          // Create text span
+          const textSpan = document.createElement('span');
+          textSpan.className = 'fp-modal__color-text';
+          textSpan.textContent = value;
+          colorBtn.appendChild(textSpan);
 
           // Don't select by default - user must choose
 
