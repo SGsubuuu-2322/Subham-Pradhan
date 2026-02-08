@@ -475,9 +475,10 @@
   border: none;
   cursor: pointer;
   font-family: "Arial", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.48px;
+  letter-spacing: 0px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
